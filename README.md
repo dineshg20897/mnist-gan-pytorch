@@ -57,4 +57,6 @@ The MNIST database (Modified National Institute of Standards and Technology data
 
 ## Outputs
 
+Here you can see the GAN Model getting progressively better at generating _fake_ images for every 10 epochs
+
 <img src="https://github.com/dineshg20897/mnist-gan-pytorch/blob/main/assets/Output.png?raw=true" width="800">
