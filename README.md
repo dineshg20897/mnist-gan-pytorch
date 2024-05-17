@@ -28,9 +28,11 @@ A typical GAN network is shown below...<br><br>
 
 The fundamental concept behind GANs involves a minimax game between the generator \( G \) and the discriminator \( D \). The generator \( G \) maps a noise vector \( z \) from a latent space to the data space to produce synthetic data samples \( G(z) \). The discriminator \( D \), on the other hand, receives a data sample and outputs a probability \( D(x) \) that the sample is real (from the true data distribution) or fake (from the generator). The objective function of a GAN is defined as:
 
-\[ \min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{\text{data}}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log(1 - D(G(z)))] \]
+```math
+\min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{\text{data}}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log(1 - D(G(z)))]
+```
 
-In this equation, \( p_{\text{data}}(x) \) represents the real data distribution, and \( p_z(z) \) is the distribution of the noise vector \( z \). The discriminator aims to maximize the probability of correctly identifying real and fake samples, while the generator strives to minimize the probability of the discriminator detecting its fakes. Through iterative training, both networks reach an equilibrium where the generator produces highly realistic data that the discriminator can no longer distinguish from real data.
+In this equation, $\( p_{\text{data}}(x) \)$ represents the real data distribution, and $\( p_z(z) \)$ is the distribution of the noise vector \( z \). The discriminator aims to maximize the probability of correctly identifying real and fake samples, while the generator strives to minimize the probability of the discriminator detecting its fakes. Through iterative training, both networks reach an equilibrium where the generator produces highly realistic data that the discriminator can no longer distinguish from real data.
 
 
 ## Objective
