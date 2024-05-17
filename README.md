@@ -24,7 +24,7 @@ Generative Adversarial Networks (GANs) are a class of artificial intelligence al
 
 A typical GAN network is shown below...<br><br>
 
-<img src="" width="800">
+<img src="https://github.com/dineshg20897/mnist-gan-pytorch/blob/main/assets/GAN.png?raw=true" width="800"><br><br>
 
 The fundamental concept behind GANs involves a minimax game between the generator \( G \) and the discriminator \( D \). The generator \( G \) maps a noise vector \( z \) from a latent space to the data space to produce synthetic data samples \( G(z) \). The discriminator \( D \), on the other hand, receives a data sample and outputs a probability \( D(x) \) that the sample is real (from the true data distribution) or fake (from the generator). The objective function of a GAN is defined as:
 
@@ -55,7 +55,6 @@ The MNIST database (Modified National Institute of Standards and Technology data
 4. Experiment with different hyperparameters – longer training would yield better results.
 
 
-## Output
+## Outputs
 
-<img src="" width="800">
-![image](https://github.com/dineshg20897/mnist-gan-pytorch/assets/37221631/88a0c064-882c-4d39-a209-8caa6f22b93d)
+<img src="https://github.com/dineshg20897/mnist-gan-pytorch/blob/main/assets/Output.png?raw=true" width="800">
